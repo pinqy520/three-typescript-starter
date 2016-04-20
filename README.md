@@ -1,6 +1,5 @@
 # Typescript Three.js Webpack Starter
 
-
 - Typescript support.
 - Webpack
 - Html plugin
