@@ -1,5 +1,9 @@
+// add styles
+import './style.css'
+// three.js
 import * as THREE from 'three'
 
+// create the scene
 let scene = new THREE.Scene()
 
 let camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
