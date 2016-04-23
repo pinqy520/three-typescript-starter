@@ -6,18 +6,23 @@ import * as THREE from 'three'
 // create the scene
 let scene = new THREE.Scene()
 
+// create the camera
 let camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
 
 let renderer = new THREE.WebGLRenderer()
 
+// set size
 renderer.setSize(window.innerWidth, window.innerHeight)
 
+// add canvas to dom
 document.body.appendChild(renderer.domElement)
 
+// add axis to the scene
 let axis = new THREE.AxisHelper(10)
 
 scene.add(axis)
 
+// add lights
 let light = new THREE.DirectionalLight(0xffffff, 1.0)
 
 light.position.set(100, 100, 100)
@@ -35,6 +40,7 @@ let material = new THREE.MeshBasicMaterial({
 	wireframe: true
 })
 
+// create a box and add it to the scene 
 let box = new THREE.Mesh(new THREE.BoxGeometry(1, 1, 1), material)
 
 scene.add(box)
