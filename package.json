@@ -27,12 +27,12 @@
     "extract-text-webpack-plugin": "latest",
     "html-webpack-plugin": "latest",
     "json-loader": "latest",
-    "progress-bar-webpack-plugin": "^1.6.0",
+    "progress-bar-webpack-plugin": "latest",
     "style-loader": "latest",
     "webpack": "latest",
     "webpack-dev-server": "latest"
   },
   "dependencies": {
-    "three": "^0.75.0"
+    "three": "latest"
   }
 }
