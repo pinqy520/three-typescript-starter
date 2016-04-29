@@ -37,4 +37,5 @@ typings
 
 # Dist and OSX
 dist
+lib
 .DS_Store

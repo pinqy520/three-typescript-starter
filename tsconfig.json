@@ -16,9 +16,6 @@
         "suppressImplicitAnyIndexErrors": true,
         "outDir": "./lib/"
     },
-    "filesGlob": [
-        "./src/**/*.ts"
-    ],
     "exclude": [
         "node_modules",
         "typings/main",

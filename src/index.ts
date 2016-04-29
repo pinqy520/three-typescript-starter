@@ -40,7 +40,7 @@ let material = new THREE.MeshBasicMaterial({
 	wireframe: true
 })
 
-// create a box and add it to the scene 
+// create a box and add it to the scene
 let box = new THREE.Mesh(new THREE.BoxGeometry(1, 1, 1), material)
 
 scene.add(box)
