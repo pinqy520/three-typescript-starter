@@ -36,6 +36,6 @@ module.exports = {
             { test: /\.css$/, loader: "style-loader!css-loader" }
         ]
     },
-    resolve: { extensions: ["", ".web.coffee", ".web.js", ".coffee", ".js"] },
+    resolve: { extensions: ["", ".web.ts", ".web.js", ".ts", ".js"] },
     plugins: [HTMLWebpackPluginConfig, BrowserSyncPluginConfig, ProgressBarPluginConfig]
 }

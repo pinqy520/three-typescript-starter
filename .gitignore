@@ -32,9 +32,6 @@ node_modules
 # Optional REPL history
 .node_repl_history
 
-# Typescript
-typings
-
 # Dist and OSX
 dist
 lib

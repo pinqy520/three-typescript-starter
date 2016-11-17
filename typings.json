@@ -1,11 +1,8 @@
 {
-  "name": "three-coffee-starter",
-  "version": false,
-  "dependencies": {},
-  "ambientDependencies": {
-    "es6-promise": "registry:dt/es6-promise#0.0.0+20160423074304",
+  "globalDependencies": {
+    "es6-promise": "registry:dt/es6-promise#0.0.0+20160614011821",
     "geometry-dom": "registry:dt/geometry-dom#0.0.0+20160317120654",
-    "three": "registry:dt/three#0.0.0+20160417141754",
-    "webvr-api": "registry:dt/webvr-api#0.0.0+20160317120654"
+    "three": "registry:dt/three#0.0.0+20161004170959",
+    "webvr-api": "registry:dt/webvr-api#0.0.0+20160608064235"
   }
 }
