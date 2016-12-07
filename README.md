@@ -7,7 +7,7 @@
 
 ## Usage
 
-### Install Typscript and Typings
+### Install Typscript
 
 ```
 npm install typescript -g
