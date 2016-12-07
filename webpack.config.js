@@ -32,8 +32,24 @@ module.exports = {
     },
     module: {
         loaders: [
-            { test: /\.ts$/, exclude: /node_modules/, loader: "ts-loader" },
-            { test: /\.css$/, loader: "style-loader!css-loader" }
+            {
+                test: /\.ts$/,
+                loader: 'awesome-typescript-loader'
+            }, {
+                test: /\.css$/,
+                exclude: /[\/\\]src[\/\\]/,
+                loaders: [
+                    'style?sourceMap',
+                    'css'
+                ]
+            }, {
+                test: /\.css$/,
+                exclude: /[\/\\](node_modules|bower_components|public)[\/\\]/,
+                loaders: [
+                    'style?sourceMap',
+                    'css?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]'
+                ]
+            }
         ]
     },
     resolve: { extensions: ["", ".web.ts", ".web.js", ".ts", ".js"] },

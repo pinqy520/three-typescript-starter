@@ -1,25 +1,22 @@
 {
     "compilerOptions": {
-        "target": "es5",
+        "target": "es6",
         "module": "commonjs",
-        "moduleResolution": "classic",
-        "isolatedModules": false,
-        "jsx": "react",
+        "moduleResolution": "node",
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
-        "declaration": false,
-        "noImplicitAny": false,
-        "noImplicitUseStrict": false,
-        "removeComments": true,
-        "noLib": false,
         "preserveConstEnums": true,
         "suppressImplicitAnyIndexErrors": true,
         "outDir": "./lib/"
     },
+    "awesomeTypescriptLoaderOptions": {
+        "useWebpackText": true,
+        "forkChecker": true,
+        "useCache": true
+    },
     "exclude": [
         "node_modules",
-        "typings/main",
-        "typings/main.d.ts"
+        "lib"
     ],
     "compileOnSave": true,
     "buildOnSave": false,

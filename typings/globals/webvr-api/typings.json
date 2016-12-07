@@ -1,8 +1,0 @@
-{
-  "resolution": "main",
-  "tree": {
-    "src": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/571cd2bb8cdd6cf48428dca6ae6f4c486be7e2ec/webvr-api/webvr-api.d.ts",
-    "raw": "registry:dt/webvr-api#0.0.0+20160608064235",
-    "typings": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/571cd2bb8cdd6cf48428dca6ae6f4c486be7e2ec/webvr-api/webvr-api.d.ts"
-  }
-}

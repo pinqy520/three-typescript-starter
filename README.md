@@ -10,7 +10,7 @@
 ### Install Typscript and Typings
 
 ```
-npm install typings typescript -g
+npm install typescript -g
 ```
 
 ### Start
@@ -19,6 +19,5 @@ npm install typings typescript -g
 $ git clone https://github.com/pinqy520/three-typescript-starter.git
 $ cd three-typescript-starter
 $ npm install # or yarn
-$ typings install
 $ npm start
 ```
