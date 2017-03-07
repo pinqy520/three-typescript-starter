@@ -39,19 +39,19 @@ module.exports = {
                 test: /\.css$/,
                 exclude: /[\/\\]src[\/\\]/,
                 loaders: [
-                    'style?sourceMap',
-                    'css'
+                    'style-loader?sourceMap',
+                    'css-loader'
                 ]
             }, {
                 test: /\.css$/,
                 exclude: /[\/\\](node_modules|bower_components|public)[\/\\]/,
                 loaders: [
-                    'style?sourceMap',
-                    'css?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]'
+                    'style-loader?sourceMap',
+                    'css-loader?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]'
                 ]
             }
         ]
     },
-    resolve: { extensions: ["", ".web.ts", ".web.js", ".ts", ".js"] },
+    resolve: { extensions: [".web.ts", ".web.js", ".ts", ".js"] },
     plugins: [HTMLWebpackPluginConfig, BrowserSyncPluginConfig, ProgressBarPluginConfig]
 }
