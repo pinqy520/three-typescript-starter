@@ -22,6 +22,7 @@ const ProgressBarPluginConfig = new ProgressBarPlugin()
 
 /* Export configuration */
 module.exports = {
+    mode: 'development',
     devtool: 'source-map',
     entry: [
         './src/index.ts'
@@ -31,23 +32,40 @@ module.exports = {
         filename: 'index.js'
     },
     module: {
-        loaders: [
+        rules: [
             {
                 test: /\.ts$/,
-                loader: 'awesome-typescript-loader'
+                use: 'awesome-typescript-loader'
             }, {
                 test: /\.css$/,
                 exclude: /[\/\\]src[\/\\]/,
-                loaders: [
-                    'style-loader?sourceMap',
-                    'css-loader'
+                use: [
+                    {
+                        loader: 'style-loader',
+                        options: {
+                            sourceMap: true
+                        }
+                    },
+                    {loader: 'css-loader'}
                 ]
             }, {
                 test: /\.css$/,
                 exclude: /[\/\\](node_modules|bower_components|public)[\/\\]/,
-                loaders: [
-                    'style-loader?sourceMap',
-                    'css-loader?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]'
+                use: [
+                    {
+                        loader: 'style-loader',
+                        options: {
+                            sourceMap: true
+                        }
+                    },
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            modules: true,
+                            importLoaders: 1,
+                            localIdentName: '[path]___[name]__[local]___[hash:base64:5]'
+                        }
+                    }
                 ]
             }
         ]
