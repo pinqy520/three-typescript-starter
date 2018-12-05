@@ -30,7 +30,7 @@
     "style-loader": "latest",
     "typescript": "latest",
     "webpack": "latest",
-    "webpack-cli": "^2.0.14",
+    "webpack-cli": "^3.0.8",
     "webpack-dev-server": "latest"
   },
   "dependencies": {
