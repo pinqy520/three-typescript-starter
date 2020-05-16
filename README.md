@@ -3,7 +3,6 @@
 - Typescript support.
 - Webpack
 - Html plugin
-- BrowserSync
 
 ## Usage
 
