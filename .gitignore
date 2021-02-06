@@ -37,8 +37,9 @@ dist
 lib
 .DS_Store
 
-# Yarn
+# Lock
 yarn.lock
+package-lock.json
 
 # awesome-typescript
 .awcache
