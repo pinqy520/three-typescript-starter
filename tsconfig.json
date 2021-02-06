@@ -9,18 +9,8 @@
         "suppressImplicitAnyIndexErrors": true,
         "outDir": "./lib/"
     },
-    "awesomeTypescriptLoaderOptions": {
-        "useWebpackText": true,
-        "forkChecker": true,
-        "useCache": true
-    },
     "exclude": [
         "node_modules",
         "lib"
-    ],
-    "compileOnSave": true,
-    "buildOnSave": false,
-    "atom": {
-        "rewriteTsconfig": false
-    }
+    ]
 }

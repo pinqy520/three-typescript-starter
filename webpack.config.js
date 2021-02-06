@@ -1,6 +1,5 @@
 const { resolve } = require('path');
 
-const { CheckerPlugin } = require('awesome-typescript-loader');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 
@@ -23,7 +22,7 @@ module.exports = {
     rules: [
       {
         test: /\.tsx?$/,
-        use: ['awesome-typescript-loader'],
+        use: ['ts-loader'],
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
@@ -42,7 +41,6 @@ module.exports = {
     extensions: ['.ts', '.tsx', '.js', '.jsx'],
   },
   plugins: [
-    new CheckerPlugin(),
     new ProgressBarPlugin(),
     new HtmlWebpackPlugin({
       template: `${__dirname}/src/index.html`,

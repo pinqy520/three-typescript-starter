@@ -19,11 +19,11 @@
   },
   "homepage": "https://github.com/pinqy520/three-typescript-starter#readme",
   "devDependencies": {
-    "awesome-typescript-loader": "latest",
     "css-loader": "latest",
     "html-webpack-plugin": "latest",
     "progress-bar-webpack-plugin": "latest",
     "style-loader": "latest",
+    "ts-loader": "latest",
     "typescript": "latest",
     "webpack": "latest",
     "webpack-cli": "latest",
